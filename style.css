@@ -1,0 +1,75 @@
+body
+{
+	background-color: #404040;
+	color: #FFFFFF;
+	font-family: Consolas;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+header
+{
+	width: calc(100% - 100px);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	text-align: right;
+	color: #FFFFFF;
+}
+header a
+{
+	color: #60AAFF;
+	text-decoration: none;
+}
+section
+{
+	width: calc(100% - 100px);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.menu
+{
+	display: block;
+	background: #202020;
+	border-color: #80FF40;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px 10px 0px 0px;
+	min-height: 20px;
+	width: 100px;
+	padding: 10px;
+	float: left;
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.chosen
+{
+	background: linear-gradient(#808080, #202020);
+}
+
+.emptyMenu
+{
+	height: 40px;
+	float: right;
+	color: #FFFFFF;
+}
+
+#content
+{
+	clear: both;
+	width: calc(100% - 20px);
+	min-height: 500px;
+	background-color: #202020;
+	border-color: #80FF40;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 0px 10px 10px 10px;
+	position: relative;
+	padding: 10px;
+	top: -1px;
+}
