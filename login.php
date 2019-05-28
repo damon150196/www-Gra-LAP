@@ -30,7 +30,7 @@ if($_POST)
      {          
           $_SESSION['id_user'] = $row['id_user'];
           $result->close();
-          header("Location: index.php");
+          header("Location: index.php?display=rules");
      }
      else
      {

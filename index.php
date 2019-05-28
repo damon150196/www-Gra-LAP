@@ -68,6 +68,12 @@ echo'
 				 case "home":
 					  echo'<h2>Gra LAP - Strona główna</h2>'; 
 					  break;
+				 case "rules":
+					  include("zasady.php");
+					  break;
+				 case "waiting":
+					  include("player_waiting.php");
+				      break;
 
 			}
 			
