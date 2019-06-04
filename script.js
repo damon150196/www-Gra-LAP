@@ -1,3 +1,5 @@
+var mouseIsDown = false;
+
 
 function change(object)
 {
@@ -6,6 +8,15 @@ function change(object)
 	var owner = $(object).attr('owner');
 	
 	changeColor(owner, col, row);
+}
+
+function changeIfOver(object)
+{
+	var col = $(object).attr('col')*1;
+	var row = $(object).attr('row')*1;
+	var owner = $(object).attr('owner');
+	
+	if(mouseIsDown === true) changeColor(owner, col, row);
 }
 
 function changeColor(owner, col, row)
@@ -21,4 +32,9 @@ function changeColor(owner, col, row)
 		}
 	}
 	if(color != "#000000") $('button[owner="'+owner+'"][col="'+col+'"][row="'+row+'"]').css('background-color', color);
+}
+
+function setMouseIsDown(value)
+{
+	mouseIsDown = value;
 }
