@@ -73,3 +73,40 @@ section
 	padding: 10px;
 	top: -1px;
 }
+
+
+#colors 
+{
+	display: flex;
+}
+
+#colors label
+{
+	display: block;
+	maring: 10px;
+}	
+
+#my
+{
+	display: block;
+	width: 280px;
+	height: 280px;
+	border-color: #80FF40;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 10px;
+	margin: 20px 50px 50px 20px;
+	float: left;
+}
+#enemy
+{
+	display: block;
+	width: 280px;
+	height: 280px;
+	border-color: #FF8040;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 10px;
+	margin: 20px 50px 50px 20px;
+	float: left;
+}

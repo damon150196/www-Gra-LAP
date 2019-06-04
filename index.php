@@ -44,6 +44,7 @@ echo'
 <head>
 	<title>Gra LAP</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="script.js"></script> 
 	<meta charset="UTF-8">
 </head>
@@ -67,6 +68,10 @@ echo'
 
 				 case "home":
 					  echo'<h2>Gra LAP - Strona główna</h2>'; 
+					  break;
+					  
+				 case "game":
+					  include("files/game.php");
 					  break;
 
 			}
