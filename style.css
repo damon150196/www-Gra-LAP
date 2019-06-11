@@ -110,3 +110,10 @@ section
 	margin: 20px 50px 50px 20px;
 	float: left;
 }
+
+.linkasbutton {
+	-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+	text-decoration: none;
+}

@@ -1,9 +1,11 @@
 <?php
 
-if(@$_SESSION['id_user'])
-{
-	echo'
-		<article>1. PH
+if(!isset($_SESSION['id_user']))
+	header("Location: index.php");
+	
+?>
+
+<article>1. PH
 		</br>
 		2. PH
 		</br>
@@ -11,11 +13,6 @@ if(@$_SESSION['id_user'])
 		</br>
 		4. PH
 		</br>
-		<article>
-		<button>Akceptuje</button>
-		<button onclick="style.display=hidden">Chce uciec</button>
-		';
-}
-else
-	header("Location: index.php");
-?>
+		</article>
+		<a href="index.php?display=waiting" class="linkasbutton">Akceptuje </a>
+		<a href="index.php" class="linkasbutton">Nie akceptuje </a>
