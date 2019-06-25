@@ -17,8 +17,8 @@ if(@$_SESSION['id_user'])
 					Jeśli gracz odgadł dokładnie położenie wszystkich pól - wygrywa, w przeciwnym wypadku opuszcza kolejkę. <br />
 					Gra kończy się remisem, jeśli w tym samym ruchu (po tej samej liczbie uzyskanych odpowiedzi) obaj gracze zaprezentują prawidłowe rozwiązania.</p>
 		<article>
-		<button>Akceptuje</button>
-		<button onclick="style.display=hidden">Chce uciec</button>
+		<a href="index.php?display=waiting" class="linkasbutton">Akceptuje </a>
+		<a href="index.php" class="linkasbutton">Nie akceptuje </a>
 		';
 }
 else
