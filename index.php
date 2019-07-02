@@ -65,9 +65,11 @@ echo'
 				 case "login":
 					  include ("login.php");
 					  break;
+
 				 case "home":
 					  echo'<h2>Gra LAP - Strona główna</h2>'; 
-					  break; 
+					  break;
+					  
 				 case "game":
 					  include("files/game.php");
 					  break;
@@ -77,6 +79,10 @@ echo'
 				 case "waiting":
 					  include("player_waiting.php");
 				      break;
+				 case "initGame":
+					  include("files/initGame.php");
+					  break;
+
 			}
 			
 			echo'
